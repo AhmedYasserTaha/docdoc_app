@@ -5,22 +5,9 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Onboarding Screen')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('Welcome to the Onboarding Screen!'),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              },
-              child: const Text('Go to Home Screen'),
-            ),
-          ],
-        ),
-      ),
-    );
+    return SafeArea(child: SingleChildScrollView(child: Column(children: [
+          
+        ],
+      )));
   }
 }
