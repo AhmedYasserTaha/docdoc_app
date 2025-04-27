@@ -1,3 +1,5 @@
+import 'package:doc_doc/core/helper/extentions.dart';
+import 'package:doc_doc/core/routing/routes.dart';
 import 'package:doc_doc/core/theme/colors.dart';
 import 'package:doc_doc/core/theme/styles.dart';
 import 'package:flutter/material.dart';
@@ -9,9 +11,12 @@ class GetStartedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
+
       height: 50,
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          context.pushNamed(Routes.loginScreen);
+        },
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(ColorsManeger.primaryColor),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,

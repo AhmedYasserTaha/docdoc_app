@@ -6,16 +6,17 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login Screen')),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: const Text('Login Screen'),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('Welcome to the Login Screen!'),
             ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              },
+              onPressed: () {},
               child: const Text('Go to Home Screen'),
             ),
           ],
