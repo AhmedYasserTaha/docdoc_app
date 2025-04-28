@@ -19,11 +19,21 @@ class TextStyles {
     fontWeight: FontWeightHelper.bold,
     color: ColorsManeger.primaryColor,
   );
+  static TextStyle font16SemBoldWhite = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.semibold,
+    color: Colors.white,
+  );
 
   static TextStyle font13GreyReguler = TextStyle(
     fontSize: 13.sp,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeightHelper.regular,
     color: ColorsManeger.gray,
+  );
+  static TextStyle font13BlueReguler = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManeger.primaryColor,
   );
   static TextStyle font14GreyReguler = TextStyle(
     fontSize: 14.sp,

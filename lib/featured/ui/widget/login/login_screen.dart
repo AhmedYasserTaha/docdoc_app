@@ -1,6 +1,7 @@
 import 'package:doc_doc/core/helper/spacing.dart';
 import 'package:doc_doc/core/theme/colors.dart';
 import 'package:doc_doc/core/theme/styles.dart';
+import 'package:doc_doc/core/widget/app_text_button.dart';
 import 'package:doc_doc/core/widget/app_text_form_feild.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -56,6 +57,16 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                       ),
+                      verticalSpace(24),
+                      Align(
+                        alignment: AlignmentDirectional.centerEnd,
+                        child: Text(
+                          "Forgot Password?",
+                          style: TextStyles.font13BlueReguler,
+                        ),
+                      ),
+                      verticalSpace(40),
+                      AppTextButton(textButton: "Login"),
                     ],
                   ),
                 ),
