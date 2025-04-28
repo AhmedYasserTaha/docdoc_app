@@ -1,7 +1,7 @@
 import 'package:doc_doc/core/routing/routes.dart';
 import 'package:doc_doc/featured/onBoarding/onboardong_screen.dart';
 import 'package:doc_doc/featured/splash/splash.dart';
-import 'package:doc_doc/featured/ui/widget/login/login_screen.dart';
+import 'package:doc_doc/featured/ui/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

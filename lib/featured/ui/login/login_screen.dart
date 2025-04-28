@@ -3,6 +3,8 @@ import 'package:doc_doc/core/theme/colors.dart';
 import 'package:doc_doc/core/theme/styles.dart';
 import 'package:doc_doc/core/widget/app_text_button.dart';
 import 'package:doc_doc/core/widget/app_text_form_feild.dart';
+import 'package:doc_doc/featured/ui/widget/already_have_accont.dart';
+import 'package:doc_doc/featured/ui/widget/terms_and_conditions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -66,7 +68,15 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       verticalSpace(40),
-                      AppTextButton(textButton: "Login"),
+                      AppTextButton(
+                        textButton: "Login",
+                        style: TextStyles.font16SemBold,
+                      ),
+                      verticalSpace(15),
+                      TermsAndConditions(),
+                      verticalSpace(40),
+
+                      AlreadyHaveAccont(),
                     ],
                   ),
                 ),
